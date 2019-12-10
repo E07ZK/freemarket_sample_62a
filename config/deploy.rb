@@ -6,7 +6,7 @@ lock '3.11.2'
 set :application, 'freemarket_sample_62a'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:Error4577/freemarket_sample_62a.git'
+set :repo_url,  'git@github.com:E07ZK/freemarket_sample_62a.git'
 
 # どのブランチからpullするかを指定する
 # bundle exec cap production deploy BRANCH=pullしたいブランチ名
@@ -21,7 +21,7 @@ set :rbenv_ruby, '2.5.1'
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/tech_exp.pem']
+                  keys: ['~/.ssh/ChatSpace.pem']
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }

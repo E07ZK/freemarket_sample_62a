@@ -70,7 +70,7 @@
                       .main__main__product__box__item__link__figure__figcaption__style
                         %span.main__main__product__box__item__link__figure__figcaption__style__span
                           = "¥#{lady.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag lady.images[0], class:"main__main__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(lady.images[0]), class:"main__main__product__box__item__link__figure__figcaption__style__img"
                         - unless lady.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -100,7 +100,7 @@
                       .main__main__product__box__item__link__figure__figcaption__style
                         %span.main__main__product__box__item__link__figure__figcaption__style__span
                           = "¥#{men.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag men.images[0], class:"main__main__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(men.images[0]), class:"main__main__product__box__item__link__figure__figcaption__style__img"
                         - unless men.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -131,7 +131,7 @@
                       .main__main__product__box__item__link__figure__figcaption__style
                         %span.main__main__product__box__item__link__figure__figcaption__style__span 
                           = "¥#{electronic.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag electronic.images[0], class:"main__main__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(electronic.images[0]), class:"main__main__product__box__item__link__figure__figcaption__style__img"
                         - unless electronic.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -161,7 +161,7 @@
                       .main__main__product__box__item__link__figure__figcaption__style
                         %span.main__main__product__box__item__link__figure__figcaption__style__span
                           = "¥#{toy.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag toy.images[0], class:"main__main__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(toy.images[0]), class:"main__main__product__box__item__link__figure__figcaption__style__img"
                         - unless toy.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -206,7 +206,7 @@
                       .main__foot__product__box__item__link__figure__figcaption__style
                         %span.main__foot__product__box__item__link__figure__figcaption__style__span
                           = "¥#{chanel.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag chanel.images[0], class:"main__foot__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(chanel.images[0]), class:"main__foot__product__box__item__link__figure__figcaption__style__img"
                         - unless chanel.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -236,7 +236,7 @@
                       .main__foot__product__box__item__link__figure__figcaption__style
                         %span.main__foot__product__box__item__link__figure__figcaption__style__span
                           = "¥#{vuitton.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag vuitton.images[0], class:"main__foot__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(vuitton.images[0]), class:"main__foot__product__box__item__link__figure__figcaption__style__img"
                         - unless vuitton.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -266,7 +266,7 @@
                       .main__foot__product__box__item__link__figure__figcaption__style
                         %span.main__foot__product__box__item__link__figure__figcaption__style__span
                           = "¥#{supreme.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag supreme.images[0], class:"main__foot__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(supreme.images[0]), class:"main__foot__product__box__item__link__figure__figcaption__style__img"
                         - unless supreme.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD
@@ -296,7 +296,7 @@
                       .main__foot__product__box__item__link__figure__figcaption__style
                         %span.main__foot__product__box__item__link__figure__figcaption__style__span
                           = "¥#{nike.price.to_s(:delimited, delimiter: ',')}"
-                        = image_tag nike.images[0], class:"main__foot__product__box__item__link__figure__figcaption__style__img"
+                        = lazysizes_image_tag url_for(nike.images[0]), class:"main__foot__product__box__item__link__figure__figcaption__style__img"
                         - unless nike.buyer_id.nil?
                           .product-box__sold-out
                             %div SOLD

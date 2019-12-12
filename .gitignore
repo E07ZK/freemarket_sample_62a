@@ -31,5 +31,5 @@
 
 .DS_Store
 
-app/assets/images/product_images/*
+# app/assets/images/product_images/*
 public/images/*

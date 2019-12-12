@@ -6,7 +6,6 @@
   %main.single__main
     %section.l-single__container
       %h2.l-single__head.registration 支払い方法
-      -# %form.l-single__inner.registration-form{action: "#"}
       = form_with model: @card, url: card_registration_mypages_path, class: "l-single__inner", method: :post, local: true, html: { name: 'inputForm' } do |f|
         .l-single__content
           .form__group

@@ -26,8 +26,6 @@
                 .buy_form--price__cell
                   = "¥" + @product.price.to_s
             = f.hidden_field :product_id, value: @product.id
-            -# %p.has-error-text 配送先と支払い方法の入力を完了してください。
-            -# %input#user_info_is_not_complete{:type => "hidden"}/
             = f.submit "購入する", class: "btn-default btn-red bold"
       %section.buy-content.buy-user-info
         .buy-content-inner

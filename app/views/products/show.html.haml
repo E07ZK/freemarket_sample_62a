@@ -65,7 +65,7 @@
             = @product.ship_cost.name
         %tr
           %th.item__product__table__th 配送の方法
-          %td.item__product__table__td らくらくメルカリ便
+          %td.item__product__table__td らくらくフリマ便
         %tr
           %th.item__product__table__th 配送元地域
           %td.item__product__table__td
@@ -174,7 +174,7 @@
   %section.items-box__bottom
     %h2.items-box-head
       - unless @product.brand.nil?
-        = link_to "#{@product.brand.name}の#{@product.category.name} その他の商品", "#"
+        = link_to "#{@product.brand.name} その他の商品", "#"
       - else
         = link_to "ノーブランド（#{@product.category.root.name}） その他の商品", "#"
     .items-box-content.clearfix
@@ -200,7 +200,7 @@
   %ul.bread-crumbs__ul
     %li.bread-crumbs__li{itemscope: "", itemtype: "#"}
       = link_to root_path, itemprop: "url" do
-        %span.bread-crumbs__title{itemprop: "title"} メルカリ
+        %span.bread-crumbs__title{itemprop: "title"} Fmarket
       = fa_icon "chevron-right"
     %li.bread-crumbs__next{itemscope: "", itemtype: "#"}
       %span{itemprop: "title"}

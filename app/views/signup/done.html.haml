@@ -23,13 +23,11 @@
   %main.single__main
     %section.l-single__container
       %h2.l-single__head.registration 会員登録完了
-      -# %form.l-single__inner.registration-form{action: "#", method: "POST"}
       .l-single__inner.registration-form
         .l-single__content
           %p.text-center 
             ありがとうございます。
             %br
             会員登録が完了しました。
-          -# %button.btn-default.btn-red{type: "#"} メルカリを始める
-          = link_to "メルカリを始める", root_path, class: "btn-default btn-red"
+          = link_to "買い物を始める", root_path, class: "btn-default btn-red"
   = render partial: "shared/iFooter"

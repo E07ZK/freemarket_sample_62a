@@ -46,7 +46,6 @@
             = f.label :prefecture, "都道府県"
             %span.form__require 必須
             .select-wrap
-              -# = fa_icon "chevron-down", class: "icon-arrow-bottom"
               = f.collection_select :prefecture, Prefecture.all, :id, :name, prompt: "---", class: "select-default"
           .form__group
             = f.label :city_name, "市区町村"

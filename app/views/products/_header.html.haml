@@ -32,19 +32,19 @@
               カテゴリーから探す
             %ul.header__menu-box--left__parents 
               - @parents.each do |parent|
-                %li.header__menu-box--left__parents__parent
+                %li.header__menu-box--left__parents__parent{value: parent.id}
                   = link_to "#" do
                     = parent.name
-                  %ul.header__menu-box--left__children
-                    -parent.children.each do |child|
-                      %li.header__menu-box--left__children__child 
-                        = link_to "#" do
-                          = child.name
-                        %ul.header__menu-box--left__grand-children 
-                          -child.children.each do |grandchild|
-                            %li.header__menu-box--left__grand-children__grand-child
-                              = link_to "#" do
-                                = grandchild.name                  
+                  %ul.header__menu-box--left__children{id: "#{parent.id}"}
+              -#       -parent.children.each do |child|
+              -#         %li.header__menu-box--left__children__child 
+              -#           = link_to "#" do
+              -#             = child.name
+              -#           %ul.header__menu-box--left__grand-children 
+              -#             -child.children.each do |grandchild|
+              -#               %li.header__menu-box--left__grand-children__grand-child
+              -#                 = link_to "#" do
+              -#                   = grandchild.name                  
 
         %ul.header__content__bd
           %li.header__content__brand

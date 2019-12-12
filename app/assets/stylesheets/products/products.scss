@@ -131,6 +131,7 @@
                     color: white;
                   }
                   .header__menu-box--left__children {
+                    width: 220px;
                     &__child {
                       display: block;
                       height: 30px;
@@ -160,6 +161,7 @@
                     &:hover {
                       color: blue;
                       .header__menu-box--left__grand-children {
+                        width: 300px;
                         &__grand-child {
                           display: block;
                           height: 30px;

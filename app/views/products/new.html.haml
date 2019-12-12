@@ -66,18 +66,6 @@
                         = f.text_field :brand_name, class: "input-default", placeholder: "例) シャネル"
                         %div
                           %ul.sell-brand-suggest.form-suggest-list
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
-                            -# %li ほげほげ
                   .form-group
                     %label
                       商品の状態
@@ -87,7 +75,7 @@
                       = f.collection_select :condition, Condition.all, :id, :name, {prompt: "---"}, {class: "select-default"}
               .sell-content.clearfix
                 %h3.sell-sub-head 配送について
-                %a.form-question{:href => "/jp/help_center/article/68/", :target => "_blank"} ?
+                = link_to "?", root_path, target: "_blank", class: "form-question"
                 .sell-form-box
                   .form-group
                     %label
@@ -112,7 +100,7 @@
                       = f.collection_select :shipping_date, Shipping_date.all, :id, :name, {prompt: "---"}, {class: "select-default"}
               .sell-content.clearfix
                 %h3.sell-sub-head 販売価格(300〜9,999,999)
-                %a.form-question{:href => "/jp/help_center/article/64/", :target => "_blank"} ?
+                = link_to "?", root_path, target: "_blank", class: "form-question"
                 .sell-form-box
                   %ul.sell-price
                     %li.form-group
@@ -136,17 +124,17 @@
               .sell-content.sell-btn-box
                 %div
                   %p
-                    %a{:href => "/jp/help_center/getting_started/prohibited_items/", :target => "_blank"} 禁止されている出品
+                    = link_to "禁止されている出品", root_path, target: "_blank"
                     、
-                    %a{:href => "/jp/help_center/getting_started/prohibited_conduct/", :target => "_blank"} 行為
+                    = link_to "行為", root_path, target: "_blank"
                     を必ずご確認ください。
                   %p
                     またブランド品でシリアルナンバー等がある場合はご記載ください。
-                    %a{:href => "/jp/help_center/getting_started/counterfeit_goods/", :target => "_blank"} 偽ブランドの販売
+                    = link_to "偽ブランドの販売", root_path, target: "_blank"
                     は犯罪であり処罰される可能性があります。
                   %p
                     また、出品をもちまして
-                    %a{:href => "/jp/seller_terms/"} 加盟店規約
+                    = link_to "加盟店規約", root_path, target: "_blank"
                     に同意したことになります。
                 %button.btn-default.btn-red#sell-submit{:type => "submit"}
                   出品する

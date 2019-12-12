@@ -5,14 +5,9 @@ class PurchaseController < ApplicationController
   def confirm
     session[:product_id] = params[:product_id] if params[:product_id].present?
     card = Card.where(user_id: current_user.id).first
-    # binding.pry
     if card.blank?
-      # session[:product_id] = params[:product_id]
-      # binding.pry
       redirect_to card_registration_mypages_path
     else
-      # binding.pry
-      # session[:product_id] = params[:product_id] if session[:product_id].blank?
       @product = Product.find(session[:product_id])
       @address = Address.where(user_id: current_user.id).first  
       card_info
@@ -20,7 +15,6 @@ class PurchaseController < ApplicationController
   end
 
   def pay
-    # binding.pry
     @product = Product.find(params[:product_id])
     card = Card.where(user_id: current_user.id).first
     Payjp.api_key = Rails.application.credentials.payjp[:private_key]

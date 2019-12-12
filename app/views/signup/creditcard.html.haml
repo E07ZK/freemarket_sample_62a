@@ -54,9 +54,6 @@
             %span.form__require 必須
             = f.number_field :payment_card_security_code, class: "input-default", placeholder: "カード背面4桁もしくは3桁の番号"
             %p.text-right
-              -# %a{href: "#", target: "_blank"}
-              -#   カード背面の番号とは?
-              -#   %i.icon-arrow-right
               = link_to "#", target: "_blank" do
                 カード背面の番号とは?
                 = fa_icon "chevron-right"

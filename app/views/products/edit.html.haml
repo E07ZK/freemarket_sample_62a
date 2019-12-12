@@ -19,15 +19,6 @@
                   .sell-upload-items-container
                     #preview-upper.sell-upload-items.have-item-0
                       %ul#images1.sell-upload-items-images
-                    -# %div{class: "sell-upload-items have-item-#{@product.images.length}", id: "preview-upper"}
-                    -#   %ul#images1.sell-upload-items-images
-                    -#     - @product.images.each_with_index do |image,index|
-                    -#       %li.sell-upload-item-image{:id => "image-#{index}"}
-                    -#         %figure.sell-upload-figure.portrait
-                    -#           = image_tag (rails_blob_path(image))
-                    -#         .sell-upload-button
-                    -#           %a.edit-button 編集
-                    -#           %a.delete-button{:id => "delete-button-#{index}"} 削除
                   = f.label :images, class: 'sell-upload-drop-label have-item-0' do
                     .sell-upload-drop-box
                       = f.file_field :images, multiple: true, style: "display: none;" , class: "sell-upload-drop-file"

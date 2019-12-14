@@ -36,6 +36,11 @@
                   = link_to "#" do
                     = parent.name
                   %ul.header__menu-box--left__children{id: "#{parent.id}"}
+                    - parent.children.each do |child|
+                      %li.header__menu-box--left__children__child{value: child.id}
+                        = link_to "#" do
+                          = child.name
+                        %ul.header__menu-box--left__grand-children{id:"#{child.id}"}
 
         %ul.header__content__bd
           %li.header__content__brand

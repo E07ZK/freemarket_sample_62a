@@ -421,7 +421,6 @@
                     text-overflow: ellipsis;
                     font-size: 14px;
                     width: 224px;
-                    // word-break : break-all;
                   }
                 } 
                 .fa {
@@ -439,12 +438,6 @@
               &:hover .pc-header-nav-parent-wrap {
                 top: 42px;
                 display: block;
-                // .pc-header-nav-parent:hover {
-                //   background-color: red;  
-                //   .nav-brand {
-                //     color: #fff;  
-                //   }
-                // }
               }
             }
           }
@@ -500,7 +493,6 @@
                 z-index: 1000;
                 color: black;
                 height: 90px;
-                // background-image: url(https://web-jp-assets.mercdn.net/_next/static/images/logo-gray-light-bf49bd7f43703356d83e9097214a2d23.svg);
                 .sc-bYSBpT-text {
                   margin-top: 15px;
                   width: 224px;
@@ -515,29 +507,6 @@
               }
             }
           }
-              // .sc-ibxdXY.fVKnBn {
-              //   display: none;
-              //   left: 50%;
-              //   transform: translate(-50%, 0px);
-              //   background-color: rgb(255, 255, 255);
-              //   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-              //   position: absolute;
-              //   top: 44px;
-              //   width: 320px;
-              //   z-index: 3;
-              //   .sc-bYSBpT-text {
-              //     background-image: url(https://web-jp-assets.mercdn.net/_next/static/images/logo-gray-light-bf49bd7f43703356d83e9097214a2d23.svg);
-              //     background-size: 78px 85px;
-              //     color: rgb(204, 204, 204);
-              //     font-size: 16px;
-              //     font-weight: 600;
-              //     text-align: center;
-              //     background-position: center 40px;
-              //     background-repeat: no-repeat;
-              //     padding: 160px 0px 60px;
-              //     }
-              //   }
-              // }
           .mypage-link {
             list-style: none;
             height: 44px;
@@ -612,55 +581,6 @@
         }
       }
     }
-    // .product-category{
-    //   display: flex;
-    //   width: 768px;
-    //   list-style: none;
-    //   font-size: 14px;
-    //   font-weight: 400;
-    //   &__root{
-    //     background-color: #fff;
-    //     width: 224px;
-    //     line-height: 44px;
-    //     text-decoration: none;
-    //     box-shadow: 1px 0 0 0 #eee inset;
-    //   }
-    //   &__children{
-    //     width: 224px;
-    //     box-shadow: 1px 0 0 0 #eee inset;
-    //   }
-    //   &__children.white{
-    //     background-color: white;
-    //   }
-    //   &__grandchildren{
-    //     width: 320px;
-    //     box-shadow: 1px 0 0 0 #eee inset;
-    //   }
-    //   &__grandchildren.white{
-    //     background-color: white;
-    //   }
-    // }
-    // #product_root_category_id{
-    //   padding: 0 16px;
-    //   background-color: #fff;
-    // }
-    // #product_root_category_id.active{
-    //   background-color: red;
-    //   color: #fff;
-    // }
-    // #product_children_category_id{
-    //   padding: 8px 16px;
-    // }
-    // #product_children_category_id.active{
-    //   background-color: #eeeeee;
-    // }
-    // #product_grandchildren_category_id{
-    //   padding: 8px 16px;
-    // }
-    // #product_grandchildren_category_id.active{
-    //   background-color: #eeeeee;
-    // }
-
   }
 }
 
@@ -1329,6 +1249,30 @@
                     vertical-align: top;
                     width: 100%;
                     z-index: 1;
+                  }
+                  .product-box__sold-out div{
+                    position: absolute;
+                    top: 15px;
+                    left: 0;
+                    z-index: 2;
+                    color: #fff;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                  }
+                  .product-box__sold-out:after{
+                    border-width: 65px 65px 0 0;
+                    border-color: #ea352d transparent transparent transparent;
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
                   }
                 }
               }
